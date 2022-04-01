@@ -5,8 +5,8 @@ sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake aut
 #Downgrade gcc and g++ to version 6
 echo "deb http://old-releases.ubuntu.com/ubuntu zesty main" | sudo tee /etc/apt/sources.list.d/zesty.list
 sudo apt-add-repository -r universe
-sudo apt-fast update
-sudo apt-fast install -y gcc-6 g++-6
+sudo apt-get update
+sudo apt-get install -y gcc-6 g++-6
 sudo update-alternatives --remove-all gcc 
 sudo update-alternatives --remove-all g++
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 1
